@@ -11,7 +11,7 @@ function App() {
         <Dictionary/>
       </main>
       <footer>
-Coded by Anna Brandon
+<p>Coded by Anna Brandon</p>
       </footer>
       </div>
     </div>
