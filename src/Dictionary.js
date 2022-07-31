@@ -6,7 +6,7 @@ import "./Dictionary.css"
 
 export default function Dictionary(){
 let [keyword, setKeyword] = useState("");
-let[results, setResults]=useState({});
+let[results, setResults]=useState(null);
 
 function handleResponse(response){
   setResults(response.data[0]);
@@ -23,7 +23,7 @@ let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 setKeyword(event.target.value)
     }
     return<div className = "Dictionary">
-      <form onSubmit = {search}>
+      <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} autoFocus={true}></input>
       </form>
       <div>
