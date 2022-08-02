@@ -38,11 +38,12 @@
 }
 .container {
   max-width:600px;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
 }
 p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:blue;
+  color:#7c73e6;
 }
 h2{
-  color:purple;
+  color:#c4c1e0;
 }
