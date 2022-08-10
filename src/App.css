@@ -43,13 +43,16 @@
 p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:#7c73e6;
+  
 }
-h2{
+h1, h2{
+  text-align:center;
   color:#1a2639;
 }
 strong{
-  text-align:left;
+  text-align:center;
 }
 a{
+  text-align:center;
   color:#f95959;
 }

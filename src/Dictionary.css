@@ -7,8 +7,14 @@
 }
 .Dictionary section {
     border-radius:20px;
-    box-shadow:20px;
+    box-shadow: 0 20 0 20;
     border:3px;
     
 
+}
+.Dictionary input{
+    width:100%;
+    padding:5px;
+    border:1px solid;
+    
 }
