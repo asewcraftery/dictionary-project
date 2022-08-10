@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -49,4 +49,7 @@ h2{
 }
 strong{
   text-align:left;
+}
+a{
+  color:#f95959;
 }
