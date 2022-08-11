@@ -12,7 +12,7 @@ function App() {
       </main>
       
       <footer>
-<p>Coded by Anna Brandon and hosted on <a>github</a> and <a>netlify</a></p>
+<p>Coded by Anna Brandon and hosted on github and netlify</p>
       </footer>
       </div>
     </div>
