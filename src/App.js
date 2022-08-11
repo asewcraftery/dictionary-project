@@ -8,11 +8,11 @@ function App() {
      <div className ="container">
     <h1>Dictionary App</h1>
       <main>
-        <Dictionary/>
+        <Dictionary defaultKeyWord="cat"/>
       </main>
       
       <footer>
-<p>Coded by Anna Brandon and hosted on github and netlify</p>
+<p>Coded by Anna Brandon and hosted on <a>github</a> and <a>netlify</a></p>
       </footer>
       </div>
     </div>
