@@ -1,5 +1,7 @@
 .App {
   text-align: left;
+  max-width:960px;
+  margin:0 auto;
 }
 
 .App-logo {
@@ -55,4 +57,7 @@ strong{
 a{
   text-align:center;
   color:#f95959;
+}
+footer{
+  text-align:center;
 }
