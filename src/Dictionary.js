@@ -17,7 +17,7 @@ let[photos, setPhotos] = useState([]);
   function handleResponse(response){
   setResults(response.data[0]);
   let pexelsApiKey="563492ad6f91700001000001af929b5ebc3e45d482195f958e326df3";
-  let pexelsApiURL=`https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;
+  let pexelsApiURL=`https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
   let headers=`{"Authorization",Bearer ${pexelsApiKey}}`
   axios.get(pexelsApiURL,`{headers:${headers}}`).then(handlePexelsResponse);
 
@@ -71,6 +71,7 @@ setPhotos(response.data.photos);
           
 } else {
   load();
+  return "Loading";
   
 }
     
