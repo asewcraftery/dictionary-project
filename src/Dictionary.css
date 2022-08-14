@@ -1,5 +1,5 @@
 .Dictionary{
-    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    background: linear-gradient(68.7deg, rgb(235, 217, 221) 8%, rgb(216, 174, 211) 55.4%, rgb(145, 130, 196) 91.1%);
     padding:100px;
     margin:10px;
     border-radius:20px;
@@ -8,6 +8,7 @@
 .Dictionary section {
     border-radius:20px;
     box-shadow: 0 20 0 20;
+    
   
     
 

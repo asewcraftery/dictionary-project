@@ -47,7 +47,8 @@ p{
   color:#132743;
   
 }
-h1, h2,h3{
+h1, h2,h3,h5{
+  font-family: 'Sen', sans-serif;
   text-align:center;
   color:#407088;
 }
@@ -56,7 +57,7 @@ strong{
 }
 a{
   text-align:center;
-  color:#f95959;
+  color:#f76b8a;
 }
 footer{
   text-align:center;
