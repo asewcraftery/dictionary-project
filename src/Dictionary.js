@@ -62,8 +62,6 @@ setPhotos(response.data.photos);
       </section>
       <section>
       <Results results={results}/>
-      </section>
-      <section>
         <Photos photos={photos}/>
       </section>
     </div>
