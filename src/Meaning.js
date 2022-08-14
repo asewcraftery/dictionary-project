@@ -11,9 +11,8 @@ export default function Meanings(props) {
             {props.meaning.definitions.map(function (definition, index) {
                 return(
                     <section key = {index}>
-                        <p>
                         <strong> Definition: </strong> {definition.definition}
-                        </p>
+                        
                         <br/>
                         <strong> Example: </strong>
                         <em>{definition.example}</em>
