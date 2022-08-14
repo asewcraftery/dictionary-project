@@ -1,21 +1,34 @@
 import React from "react";
-impoty "./Photos.css";
+import "./Photos.css";
 
-export default function Photos(props){
-if(props.photos) {
+export default function Photos(props) {
+if(props.photos.length) {
 return(
     <section className="Photos">
         <div className="row">
-        {props.photos.map(function(photo,index){
-    return <img src={photo.src.landscape} key={index} className="img-fluid"></img>
-})}
+        {props.photos.map(function(photo,index) {
+         return(
+        <div className="col-4"key={index}> 
+            <a 
+            href={photo.src.original} 
+            class="img-fluid"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <img 
+            src={photo.src.landscape} 
+            key={index} 
+            className="img-fluid"
+            alt={photo.photographer}
+            />
+            </a>
+         </div> 
+         );         
+        })}
         </div>
-
-    </section>
-);
+   </section>
+    );
 }else{
 return null;
 }
 }
-
-const apiKey="563492ad6f91700001000001af929b5ebc3e45d482195f958e326df3";

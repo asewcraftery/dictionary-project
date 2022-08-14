@@ -6,14 +6,21 @@ import Photos from "./Photos";
 
 
 export default function Dictionary(props) {
-let [keyword, setKeyword] = useState(props.defaultKeyword);
+let [keyword, setKeyword] = useState(props.defaultKeyWord);
 let [results, setResults] =useState(null);
 let [loaded, setLoaded] =useState(false);
-let[photos, setPhotos] = useState(null);
+let[photos, setPhotos] = useState([]);
+
+
 
 
   function handleResponse(response){
   setResults(response.data[0]);
+  let pexelsApiKey="563492ad6f91700001000001af929b5ebc3e45d482195f958e326df3";
+  let pexelsApiURL=`https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;
+  let headers=`{"Authorization",Bearer ${pexelsApiKey}}`
+  axios.get(pexelsApiURL,`{headers:${headers}}`).then(handlePexelsResponse);
+
 }
 function handlePexelsResponse(response){
 setPhotos(response.data.photos);
@@ -29,10 +36,7 @@ setPhotos(response.data.photos);
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
   axios.get(apiUrl).then(handleResponse);
 
-  let pexelsApiKey="563492ad6f91700001000001af929b5ebc3e45d482195f958e326df3";
-  let pexelsApiURL=`https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;
-  let headers=`{"Authorization",`Bearer ${pexelsApiKey}`}`
-  axios.get(pexelsApiKey,`{headers:${headers}}`).then(handlePexelsResponse);
+  
 }
   function handleKeywordChange(event){
   setKeyword(event.target.value)
